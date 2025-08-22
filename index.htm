@@ -44,6 +44,7 @@ body {
   text-align: left;
   max-width: 600px;
 }
+
 a.place-link { color: #1849a6; text-decoration: underline; font-weight: 500; }
 a.place-link:hover { color:#b72595; }
 
@@ -55,7 +56,6 @@ h1 {
   letter-spacing:2px;
 }
 
-/* PC/mobile 반응형 */
 @media (max-width: 920px) {
   .schedule-row, .schedule-text ul { max-width: 99vw; }
   .schedule-img img {
@@ -66,9 +66,11 @@ h1 {
     min-height: 135px;
   }
 }
-/* 모바일 본문 글씨 50% 확대(제목은 동일) */
+
+/* 모바일: 본문글씨 50% 확대, 제목크기 유지 */
 @media (max-width: 560px) {
-  body { font-size: 2.293em; }
+  body { font-size: 2.293em !important; }
+  .schedule-text ul { font-size: 2.293em !important; }
   .schedule-img img {
     height: 25vw;
     min-height: 90px;
