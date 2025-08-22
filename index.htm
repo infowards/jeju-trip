@@ -3,13 +3,16 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 40px;
+  max-width: 1100px;        /* 최대 너비 제한 */
+  margin-left: auto;
+  margin-right: auto;       /* 중앙 정렬 */
 }
 .schedule-img {
   min-width: 0;
   flex: 0 0 374px;
   max-width: 100%;
   text-align: center;
-  margin: 0 48px;
+  margin: 0 28px;           /* 마진을 줄여서 양 끝 아닌 중앙정렬 */
 }
 .schedule-img img {
   width: 100%;
@@ -31,6 +34,7 @@
   .schedule-row {
     flex-direction: column;
     align-items: stretch;
+    max-width: 99vw;
   }
   .schedule-img {
     margin: 24px 0 0 0;
@@ -43,7 +47,6 @@
     min-width: 200px;
   }
 }
-
 @media (max-width: 560px) {
   .schedule-img img {
     height: 28vw;
@@ -59,7 +62,7 @@
   2025년 여름휴가 제주 3박 4일 일정
 </h1>
 
-<!-- 1일차: 이미지 오른쪽 -->
+<!-- 1일차: 이미지 오른쪽, 중앙 배치 -->
 <div class="schedule-row">
   <div class="schedule-text">
     <h2 style="color:#2364aa;">1일차 (9월9일, 화)</h2>
@@ -84,7 +87,7 @@
       <li style="color:#888; margin-top:6px;">숙소: MJ리조트(세화해변)</li>
     </ul>
   </div>
-  <div class="schedule-img" style="margin-left:48px;">
+  <div class="schedule-img">
     <img src="https://i.postimg.cc/GtSmnT5s/1.jpg" alt="설렘">
     <p style="color:#2055a7;">Journey Begins</p>
   </div>
@@ -92,7 +95,7 @@
 
 <!-- 2일차: 이미지 왼쪽 -->
 <div class="schedule-row">
-  <div class="schedule-img" style="margin-right:48px;">
+  <div class="schedule-img">
     <img src="https://i.postimg.cc/ZYDbR3wW/2-01.jpg" alt="액티비티">
     <p style="color:#319c56;">Active Day</p>
   </div>
@@ -120,7 +123,7 @@
   </div>
 </div>
 
-<!-- 3일차: 이미지 오른쪽 -->
+<!-- 3일차: 이미지 오른쪽, 중앙 배치 -->
 <div class="schedule-row">
   <div class="schedule-text">
     <h2 style="color:#2364aa;">3일차 (9월11일, 목)</h2>
@@ -142,7 +145,7 @@
       <li style="color:#888; margin-top:6px;">숙소: 해비치리조트(표선)</li>
     </ul>
   </div>
-  <div class="schedule-img" style="margin-left:48px;">
+  <div class="schedule-img">
     <img src="https://i.postimg.cc/Y0BJGrLy/3.jpg" alt="휴식">
     <p style="color:#3b5979;">Healing & Rest</p>
   </div>
@@ -150,7 +153,7 @@
 
 <!-- 4일차: 이미지 왼쪽 -->
 <div class="schedule-row">
-  <div class="schedule-img" style="margin-right:48px;">
+  <div class="schedule-img">
     <img src="https://i.postimg.cc/ZRHr3jWt/4.jpg" alt="복귀">
     <p style="color:#909090;">Back to Reality</p>
   </div>
