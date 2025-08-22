@@ -1,6 +1,6 @@
 <style>
 body {
-  font-size: 1.18em;      /* 글꼴 크기 증가 */
+  font-size: 1.416em;      /* 기존보다 20% 더 크게 (1.18em × 1.2 = 1.416em) */
   font-family: 'Segoe UI','Malgun Gothic',Arial,sans-serif;
 }
 .schedule-row {
@@ -8,25 +8,28 @@ body {
   margin: 0 auto 44px auto;
   padding-bottom: 36px;
   border-bottom: 1px solid #dde5fa;
+  display: flex;
+  flex-direction: column;
 }
 .schedule-img {
-  min-width: 0;
-  max-width: 100%;
-  text-align: center;
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 .schedule-img img {
-  width: 100%;
-  max-width: 374px;
+  width: 374px;
   height: 234px;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 2px 16px #aad;
+  margin-right: 24px;   /* 이미지 뒤에 여백 */
 }
 .schedule-img p {
   font-weight: bold;
   margin-top: 10px;
-  font-size: 1.1em;
+  font-size: 1.12em;
+  align-self: flex-end;
+  color: #2055a7;
 }
 .schedule-text { width: 100%; }
 
@@ -35,14 +38,19 @@ a.place-link { color: #1849a6; text-decoration: underline; font-weight: 500; }
 a.place-link:hover { color:#b72595; }
 
 @media (max-width: 920px) {
-  .schedule-row {
-    max-width: 99vw;
+  .schedule-row { max-width: 99vw; }
+  .schedule-img {
+    flex-direction: column;
+    align-items: flex-start;
   }
   .schedule-img img {
-    max-width: 100vw;
+    width: 100vw;
     height: 32vw;
-    min-height: 160px;
+    max-width: 100vw;
     min-width: 200px;
+    min-height: 160px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 560px) {
@@ -53,7 +61,7 @@ a.place-link:hover { color:#b72595; }
     border-radius: 7px;
   }
   h1 { font-size: 1.33em; }
-  h2 { font-size: 1.10em; }
+  h2 { font-size: 1.12em; }
 }
 </style>
 
@@ -66,7 +74,7 @@ a.place-link:hover { color:#b72595; }
   <h2 style="color:#2364aa;">1일차 (9월9일, 화)</h2>
   <div class="schedule-img">
     <img src="https://i.postimg.cc/GtSmnT5s/1.jpg" alt="설렘">
-    <p style="color:#2055a7;">Journey Begins</p>
+    <p>Journey Begins</p>
   </div>
   <div class="schedule-text">
     <ul style="list-style:none; padding-left:0; margin-top:0;">
